@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+i,
+button,
+a {
+  cursor: pointer;
+}
+
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Boogaloo', cursive; */
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  width: 99%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-family: "Boogaloo", cursive;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.fa-x {
+  position: absolute;
+  font-size: 2.8rem;
+  top: 50px;
+  right: 50px;
+  color: white;
+}
+
+.fa-x:hover {
+  color: red;
+}
+
+.info_title {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  padding: 10px;
+  margin: 30px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 85, 85);
+  position: relative;
+  border-radius: 15px;
+}
+
+.fa-bars {
+  position: absolute;
+  font-size: 2.7rem;
+  top: 10px;
+  right: 15px;
+}
+
+.fa-bars:hover {
+  color: yellow;
+}
+
+.info_title p {
+  text-align: center;
+  font-family: "Boogaloo", cursive;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.info_title h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 500;
+  font-size: 1.85rem;
+  color: white;
+}
+
+.info_title span {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.info_title a {
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  font-family: "Boogaloo", cursive;
+  font-size: 1.3rem;
+  color: white;
+  border: none;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.info_title a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+.logo_food {
+  display: none;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.cards_foods {
+  width: 200px;
+  height: 270px;
+  border: 1px solid black;
+}
+
+menu {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+menu h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+menu input {
+  min-width: 290px;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: grey;
+  font-family: "Boogaloo", cursive;
+  font-size: 1.2rem;
+}
+
+menu input:focus {
+  outline: none;
+}
+
+menu input::placeholder {
+  color: white;
+  font-family: "Boogaloo", cursive;
+}
+
+.filter_buttons button {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Boogaloo", cursive;
+}
+
+.card_product {
+  width: 140px;
+  height: 200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.card_product_img {
+  width: 120px;
+  height: 150px;
+  border: 1px solid blue;
+}
+
+.products_cards {
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+}
+
+.drinks {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.filter_prices button {
+  padding: 5px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Boogaloo", cursive;
+}
+
+.snacks {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.postres {
+  border: 1px solid red;
+  text-align: center;
+}
+
+#CONTACTUS {
+  border: 1px solid red;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact_redes {
+  text-align: center;
+  max-width: 300px;
+}
+
+.contact_redes h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.contact_redes p {
+  font-family: "Boogaloo", cursive;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  padding: 2px;
+  border: 1px solid green;
+}
+
+.copyright {
+  text-align: start;
+  font-family: "Boogaloo", cursive;
+}
+
+footer > div {
+  padding: 2px;
+  border: 1px solid black;
+  width: 33%;
+}
+
+footer h1 {
+  font-size: 0.9rem;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+.redes_footer a,
+p {
+  text-decoration: none;
+  font-family: "Boogaloo", cursive;
+  font-size: 1rem;
+  font-weight: 100;
+}
