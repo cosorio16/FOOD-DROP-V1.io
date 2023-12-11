@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#HOME {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_info {
+    border: 1px solid blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_info h1 {
+    border: 1px solid yellow;
+    font-size: 3.5rem;
+    margin: 20px;
+}
+
+.home_info p {
+    padding: 5px;
+}
+
+.logo_cucFood {
+    border: 1px solid green;
+    width: 300px;
+    height: 300px;
+}

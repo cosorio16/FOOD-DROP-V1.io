@@ -13,20 +13,23 @@
       crossorigin="anonymous"
     ></script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>FOOD DROP</title>
   </head>
 
   <body>
-    <nav class="hidden">
+    <nav class="">
       <i class="fa-solid fa-x"></i>
-      <a href="#ABOUTUS">Home</a>
+      <a href="#HOME">Home</a>
       <a href="#MENU">Menu</a>
       <a href="#CONTACTUS">Contact Us</a>
     </nav>
 
     <main>
-      <div id="ABOUTUS">
+      <div id="HOME" class="">
         <section class="info_title">
           <i class="fa-solid fa-bars"></i>
           <h1>
@@ -34,66 +37,100 @@
             <span>FOOD DROP</span>
           </h1>
           <p>Ordena y disfruta desde donde estes, nosotros te lo llevamos.</p>
-          <div class="logo_food"></div>
-          <div class="cards_foods"></div>
-          <a href="#MENU">Ordenar</a>
+          <div class="cards_foods">
+            <div class="slider">
+              <div class="food_card_ad">1</div>
+              <div class="food_card_ad">2</div>
+              <div class="food_card_ad">3</div>
+              <div class="food_card_ad">4</div>
+            </div>
+          </div>
+          <a class="Order" href="#MENU">Ordenar</a>
         </section>
       </div>
 
-      <menu id="MENU" class="hidden">
+      <menu id="MENU" class="">
         <h1>Menu</h1>
-        <form action="">
-          <input type="search" placeholder="Buscar" name="" id="" />
-        </form>
-        <section>
+        <div class="catalog_products">
+          <div class="card_product_filter"></div>
+          <div class="card_product_filter"></div>
+          <div class="card_product_filter"></div>
+          <div class="card_product_filter"></div>
+        </div>
+
+        <div class="more_options ">
+          <form action="">
+            <input type="search" placeholder="Buscar" name="" id="" />
+          </form>
           <div class="filter_buttons">
             <button>Bebidas</button>
             <button>Snacks</button>
             <button>Postres</button>
-            <button>Explorar</button>
+            <button>Ver todo</button>
           </div>
-        </section>
-
-        <section class="drinks">
-          <h1>Bebidas</h1>
-          <div class="products_cards">
-            <div class="card_product"></div>
-          </div>
-        </section>
-
-        <section class="snacks">
-          <h1>Snacks</h1>
-
-          <div class="products_cards">
-            <div class="card_product"></div>
-          </div>
-        </section>
-
-        <section class="postres">
-          <h1>Postres</h1>
-          <div class="products_cards">
-            <div class="card_product"></div>
-          </div>
-        </section>
+        </div>
       </menu>
 
-      <section id="CONTACTUS" class="hidden">
-        <div class="contact_redes">
-          <h1>CONTACTANOS</h1>
-          <p>
-            Si estas interesado en generar ingresos, publicar tu producto o
-            compartirnos algo, adelante.
-          </p>
-          <div class="redes">
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+      <div class="all_products ">
+        <h1>BEBIDAS</h1>
+        <section class="drinks">
+          <div class="card_product">
+            <div class="card_product_img"></div>
+            <p class="name_product"></p>
+            <p class="price_product"></p>
+            <div class="button_options">
+              <button>Agregar</button>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <h1>BEBIDAS</h1>
+        <section class="drinks">
+          <div class="card_product">
+            <div class="card_product_img"></div>
+            <p class="name_product"></p>
+            <p class="price_product"></p>
+            <div class="button_options">
+              <button>Agregar</button>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <h1>BEBIDAS</h1>
+        <section class="drinks">
+          <div class="card_product">
+            <div class="card_product_img"></div>
+            <p class="name_product"></p>
+            <p class="price_product"></p>
+            <div class="button_options">
+              <button>Agregar</button>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="CONTACTUS" class="">
+        <div class="contact_container ">
+          <div class="contact_redes ">
+            <h1>CONTACTANOS</h1>
+            <p>
+              Si estas interesado en generar ingresos, publicar tu producto o
+              compartirnos algo, adelante.
+            </p>
+            <div class="redes ">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="">
       <div class="redes_footer">
         <h1>REDES</h1>
         <a href="">Facebook</a>
@@ -102,7 +139,8 @@
       </div>
       <div class="copyright">
         <p>
-          &copy; 2023 FOOD DROP. <br> Todos los derechos reservados.
+          &copy; 2023 FOOD DROP. <br />
+          Todos los derechos reservados.
         </p>
       </div>
 
